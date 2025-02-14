@@ -16,7 +16,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/black-bg.jpg";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -24,19 +24,20 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a Information System student studying at Batam International University. I enjoy creating website using ASP.NET Framework.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Web Development",
+  "C# Language",
+  "ASP.NET Framework",
+  "SQL Server",
+  "HTML",
+  "CSS",
+  "JavaScript",
 ];
 
 /**
@@ -45,7 +46,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my Back-End experience I continually look for new and better ways to make tech accessible by all.";
 
 const About = () => {
   return (
@@ -53,15 +54,15 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgb(49, 51, 53)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
+        <h2 style={{ color: "white" }}>About Myself</h2>
+        <p className="large" style={{ color: "white" }}>{description}</p>
         <hr />
         <ul
           style={{
@@ -73,11 +74,11 @@ const About = () => {
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li style={{ color: "white" }} key={skill}>{skill}</li>
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ padding: "1rem 3rem 0", color: "white" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
