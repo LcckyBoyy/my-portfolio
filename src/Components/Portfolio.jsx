@@ -9,7 +9,6 @@
  */
 
 import React from "react";
-
 /**
  * Desk image
  *
@@ -62,9 +61,9 @@ const Portfolio = () => {
       <h2 style={{ textAlign: "center", color: "white" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
+          <img 
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "cover",animation: "1s ease-out 0s 1 slideInLeft" }}
             alt={imageAltText}
           />
         </div>
